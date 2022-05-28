@@ -91,16 +91,13 @@ extension ChatViewController:UITableViewDataSource{
         cell.label.text=message.body
        
         if message.sender == Auth.auth().currentUser?.email {
-          //  cell.leftImageView.isHidden=true
+         
             cell.rightImageView.isHidden=false
-         //   cell.messageBubble.backgroundColor=UIColor(named: K.BrandColors.lightPurple)
-       //     cell.label.textColor=UIColor(named: K.BrandColors.purple)
+     
             
             }else{
                 cell.rightImageView.isHidden=true
-            //    cell.leftImageView.isHidden=false
-     //           cell.messageBubble.backgroundColor=UIColor(named: K.BrandColors.purple)
-     //           cell.label.textColor=UIColor(named: K.BrandColors.lightPurple)
+           
             }
         
         return cell
